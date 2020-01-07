@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vacancy
+        </title>
+  
+                   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head> 
+    <body>
+     <div class="container">
+               <div class="row">
+             <% include adminnavbar.ejs %>
+         </div>
+         <br> <br> <br>  <br> <br> <br>
+         <button class="btn btn-warning" data-toggle="collapse" data-target="#collapsingevent"  aria-expanded="false" aria-controls="collapsingevent">Post/Job</button>      
+          <div id="collapsingevent" class="collapse">
+          <div class="d-flex justify-content-center">
+     <br>
+    <h4>Company Form</h4>
+ 
+    </div>
+ <div class="d-flex justify-content-center">
+  <form class=" col-lg-6 signupform">
+      <br>
+          <div class="form-group">       
+      <label for="name" class="labelname">Company Name:</label>        
+      <input type="text" class="form-control  mx-auto namebox " id="name" required>
+    </div>       
+          <div class="form-group">      
+      <label for="place" class="labelname">Position:</label>
+         <input type="text" class="form-control  mx-auto namebox" id="position" required>
+    </div>
+            <div class="form-group">
+        
+      <label for="place" class="labelname">Experience:</label>
+         <input type="text" class="form-control  mx-auto namebox" id="experience" required>
+  
+    </div>
+            <div class="form-group">
+        
+      <label for="place" class="labelname">Email:</label>
+         <input type="email" class="form-control  mx-auto namebox" id="email" required>
+    </div>
+    <div class="d-flex justify-content-center">
+     
+     <button type="submit" class="btn btn-success btn-lg" id="postjob">Post</button> &nbsp;&nbsp;
+     &nbsp;&nbsp;
+     <button type="submit" class="btn btn-success btn-lg" id="updatejob">Update</button> 
+    </div>
+   <br>
+  </form>
+         </div>  
+         </div>
+         <br><br> 
+      <h2 class="regisevent">Published JOb</h2>
+      <table class="table col-sm-12" class="eventtable">
+        <thead>
+          <tr class="eventlist">
+              <th scope="col" class="title">Company Name</th>
+            <th scope="col" class="title">Position</th>
+             <th scope="col" class="title">Experience</th>
+              <th scope="col" class="title">Email</th>
+             </tr>
+        </thead>
+        <tbody id="jobtable">
+        </tbody>
+      </table>      
+        </div> 
+   <% include footer.ejs %>    
+    </body> 
+        <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="javascripts/job.js"></script>
+    </html>

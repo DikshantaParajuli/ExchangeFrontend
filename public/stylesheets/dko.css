@@ -1,0 +1,59 @@
+body{
+   margin-left: 0px;
+    padding: 0px;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.navbar{
+    opacity: 0.9;
+}
+.nav-item{
+    color: black;
+}
+.carousel{
+    width: 60%;
+    height: 20%;
+}
+
+.row{
+  
+    margin-bottom: 5px;
+}
+.box{
+    
+    background-color: black;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: black;
+    width: 1000px;
+    height: 200px;
+    margin: 10px;
+}
+.box1{
+    width: 300px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: black;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 40px;
+    color: darkred;
+    
+}
+.box2{
+    width: 500px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: black;
+    height: 200px;
+    margin: 10px;
+    color: aquamarine;
+}
+@media screen and (max-width:700px)
+{
+    .box{
+        background-color: orangered;
+    }
+}

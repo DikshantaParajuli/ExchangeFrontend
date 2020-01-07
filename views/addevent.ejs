@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Add Event</title>
+        
+                      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+                <link rel="stylesheet" href="/stylesheets/addmed.css">
+
+    </head>
+    <body>
+     <div class="row">
+             <% include adminnavbar.ejs %>
+         </div><br> <br> <br> <br>
+         <div class="d-flex justify-content-center">
+     
+    <h4>Register</h4>
+ 
+    </div>
+ <div class="d-flex justify-content-center">
+  <form class=" col-lg-6 signupform">
+      <br>
+          <div class="form-group">
+        
+      <label for="name" class="labelname">Event Name:</label>
+         
+      <input type="text" class="form-control  mx-auto namebox " id="name" required>
+    </div>
+         
+          
+          <div class="form-group">
+        
+      <label for="place" class="labelname">Place:</label>
+         
+      <input type="text" class="form-control  mx-auto namebox" id="place" required>
+    </div>
+          <div class="form-group">
+        
+      <label for="purpose" class="labelname">Purpose:</label>
+         
+      <input type="text" class="form-control  mx-auto namebox" id="purpose" required>
+    </div>
+    <div class="form-group">
+        
+      <label for="description" class="labelname">Description:</label>
+         
+      <input type="text" class="form-control  mx-auto namebox" id="description" required>
+    </div>
+    <div class="form-group">
+      <label for="date" class="labelname">Date:</label>
+      <input type="date" class="form-control  mx-auto namebox" id="date" required>
+    </div>
+        <div class="form-group">
+      <label for="date" class="labelname">Image Upload:</label>
+      <input type="file" class="form-control  mx-auto namebox" accept="image/*" name="imageFile" id="imageFile" required >
+    </div>
+    <div class="d-flex justify-content-center">
+     
+     <button type="submit" class="btn btn-success btn-lg" id="enterevent">Submit</button>
+       
+ 
+    </div>
+   <br>
+  </form>
+    </div>
+    
+       <% include footer.ejs %>
+   
+        </body>
+                <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+       
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="javascripts/register.js"></script>
+</html>

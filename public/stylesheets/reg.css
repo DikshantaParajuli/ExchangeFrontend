@@ -1,0 +1,52 @@
+body{
+    background-color: #40575e;
+    
+}
+form{
+    background-color: whitesmoke;
+    height: 70%;
+    width: 30%;
+    margin-left: 500px;
+    margin-top: 50px;
+    border-radius: 50px 50px 50px 50px;
+}
+.re{
+    font-size: 60px;
+    font-family: cursive;
+    color: white;
+    margin-left: 370px;
+    margin-top: 10px;
+}
+
+.textbox{
+    border-radius: 10px;
+    border-width: 0px;
+    height: 40px;
+    width: 330px;
+    background-color: silver;
+    margin-left: 30px;
+    
+}
+.textbox:hover{
+    border: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-bottom-style:groove;
+   
+}
+.err{
+    color: white;
+}
+
+
+.sub{
+    color:gray;
+    background-color: lightgoldenrodyellow;
+    font-size: 40px;
+    margin-left: 100px;
+}
+.btnregis{
+    font-size: 30px;
+    margin-left: 150px;
+    color: olivedrab;
+}
